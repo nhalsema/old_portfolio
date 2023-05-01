@@ -1,0 +1,163 @@
+/* sorted by order of appearence */
+
+/* BUT FIRST: import all the fonts */
+/* ~~ navbar ~~ */
+@font-face {
+    font-family: 'NeonFont';
+    src: url('../../public/other/NeonFont.otf') format('opentype');
+}
+
+/* ~~ name ~~ */
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../../public/other/BumerangFont.otf') format('opentype');
+}
+
+/* ~~ description & footer  ~~ */
+@font-face {
+    font-family: 'FooterFont';
+    src: url('../../public/other/ChampagneFont.ttf') format('opentype');
+}
+
+/* NOW WE FORMAT */
+/* ~~ navbar ~~ */
+ul {
+    font-family: NeonFont;
+    font-style: bold;
+    font-size: 2.5vw;
+    line-height: 1.2;
+
+    /* make ul horizontal and remove bullet points */
+    list-style: none;
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 50px;
+    /* on hover change pointer */
+    cursor: pointer;
+}
+
+a {
+    /* remove link formatting (blue & underlined) */
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ~~ name ~~ */
+h2 {
+    font-family: 'TitleFont', sans-serif;
+    font-size: 12vw;
+    text-align: center;
+    background-image: url('../../public/images/gold-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0);
+
+    line-height: 1.05;
+    /* chagne fontsize to view-widths (vw) for mobile */
+}
+
+/* ~~ description ~~ */
+h3 {
+    font-family: 'FooterFont';
+    font-size: 1.8vw;
+    font-style: bold;
+    text-align: center;
+    background-image: url('../../public/images/gold-texture-sm.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0);
+
+    /* line-height: 1.2; */
+}
+
+/* ~~ footer ~~ */
+h4 {
+    font-family: 'FooterFont';
+    font-size: 1vw;
+    font-style: bold;
+    text-align: center;
+    background-image: url('../../public/images/gold-texture-sm.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0);
+}
+
+/* ~~ navbar ~~ */
+/* hover neon effect */
+/* references: https://codepen.io/AllThingsSmitty/pen/VzXrgY https://codepen.io/rhsuman/embed/PagVoP?height=300&theme-id=33801&slug-hash=PagVoP&default-tab=result&user=rhsuman&embed-version=2&pen-title=Animated%20Neon%20text%20hover&preview=true */
+.neon {
+    color: #f1e273;
+    text-shadow:
+        0 0 5px #F48C06,
+        0 0 10px #F48C06,
+        0 0 20px #F48C06,
+        0 0 40px #BB3E03,
+        0 0 80px #BB3E03,
+        0 0 90px #BB3E03,
+        0 0 100px #BB3E03,
+        0 0 150px #BB3E03;
+}
+
+li:hover {
+    -webkit-animation: neon .04s ease-in-out infinite alternate;
+    animation: neon .04s ease-in-out infinite alternate;
+}
+
+/*-- Animation Keyframes for navbar--*/
+@-webkit-keyframes neon {
+    from {
+        text-shadow:
+            0 0 6px rgba(255, 255, 255, 0.92),
+            0 0 30px rgba(255, 255, 255, 0.34),
+            0 0 12px rgba(241, 226, 115, 0.52),
+            0 0 21px rgba(241, 226, 115, 0.92),
+            0 0 34px rgba(241, 226, 115, 0.78),
+            0 0 54px rgba(241, 226, 115, 0.92);
+    }
+
+    to {
+        text-shadow:
+            0 0 6px rgba(255, 255, 255, 0.98),
+            0 0 30px rgba(255, 255, 255, 0.42),
+            0 0 12px rgba(241, 226, 115, 0.58),
+            0 0 22px rgba(241, 226, 115, 0.84),
+            0 0 38px rgba(241, 226, 115, 0.88),
+            0 0 60px #F48C06;
+    }
+}
+
+@keyframes neon {
+    from {
+        text-shadow:
+            0 0 6px rgba(255, 255, 255, 0.92),
+            0 0 30px rgba(255, 255, 255, 0.34),
+            0 0 12px rgba(241, 226, 115, 0.52),
+            0 0 21px rgba(241, 226, 115, 0.92),
+            0 0 34px rgba(241, 226, 115, 0.78),
+            0 0 54px rgba(241, 226, 115, 0.92);
+    }
+
+    to {
+        text-shadow:
+            0 0 6px rgba(255, 255, 255, 0.98),
+            0 0 30px rgba(255, 255, 255, 0.42),
+            0 0 12px rgba(241, 226, 115, 0.58),
+            0 0 22px rgba(241, 226, 115, 0.84),
+            0 0 38px rgba(241, 226, 115, 0.88),
+            0 0 60px #F48C06;
+    }
+}
+
+.popFont {
+    font-family: 'FooterFont';
+    font-size: 2vw;
+    /* font-style: bold; */
+    text-align: left;
+    color: #22110d;
+}
