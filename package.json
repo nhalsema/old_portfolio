@@ -1,4 +1,6 @@
 {
+  "proxy": "http://localhost:5000",
+  "homepage": ".",
   "name": "nhportfolio_ap",
   "version": "0.1.0",
   "private": true,

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 // reference: https://codepen.io/smpnjn/pen/yLPdEPQ 
 
 

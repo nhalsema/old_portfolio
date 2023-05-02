@@ -10,9 +10,9 @@ function NavBar() {
         setShowPopUp(true); // set the state to true when the NavLink is clicked
     };
 
-    const closePopUp = () => {
-        setShowPopUp(false); // set the state to flase when the NavLink is closed
-    };
+    // const closePopUp = () => {
+    //     setShowPopUp(false); // set the state to flase when the NavLink is closed
+    // };
     
 
     return (

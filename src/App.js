@@ -5,7 +5,7 @@ import './components/Boxes.css';
 import './components/LavaLamp.css';
 import NavBar from './components/NavBar.jsx';
 import LavaLamp from './components/LavaLamp.jsx';
-import PopUp from './components/Popup.jsx';
+// import PopUp from './components/Popup.jsx';
 
 // notes for dev:
 // make site accessible 
