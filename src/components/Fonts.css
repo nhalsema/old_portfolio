@@ -4,19 +4,19 @@
 /* ~~ navbar ~~ */
 @font-face {
     font-family: 'NeonFont';
-    src: url('../../public/other/NeonFont.otf') format('opentype');
+    src: url('../assets/NeonFont.otf') format('opentype');
 }
 
 /* ~~ name ~~ */
 @font-face {
     font-family: 'TitleFont';
-    src: url('../../public/other/BumerangFont.otf') format('opentype');
+    src: url('../assets/BumerangFont.otf') format('opentype');
 }
 
 /* ~~ description & footer  ~~ */
 @font-face {
     font-family: 'FooterFont';
-    src: url('../../public/other/ChampagneFont.ttf') format('opentype');
+    src: url('../assets/ChampagneFont.ttf') format('opentype');
 }
 
 /* NOW WE FORMAT */
@@ -50,7 +50,7 @@ h2 {
     font-family: 'TitleFont', sans-serif;
     font-size: 12vw;
     text-align: center;
-    background-image: url('../../public/images/gold-texture.jpg');
+    background-image: url('../assets/gold-texture.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-clip: text;
@@ -66,7 +66,7 @@ h3 {
     font-size: 1.8vw;
     font-style: bold;
     text-align: center;
-    background-image: url('../../public/images/gold-texture-sm.jpg');
+    background-image: url('../assets/gold-texture-sm.jpg');
     background-repeat: repeat;
     background-size: 100% 100%;
     background-clip: text;
@@ -81,7 +81,7 @@ h4 {
     font-size: 1vw;
     font-style: bold;
     text-align: center;
-    background-image: url('../../public/images/gold-texture-sm.jpg');
+    background-image: url('../assets/gold-texture-sm.jpg');
     background-repeat: repeat;
     background-size: 100% 100%;
     background-clip: text;
