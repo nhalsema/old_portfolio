@@ -13,15 +13,14 @@ function NavBar() {
     // const closePopUp = () => {
     //     setShowPopUp(false); // set the state to flase when the NavLink is closed
     // };
-    
+
 
     return (
         <div>
             <nav className='navbar neon clickable' >
                 <ul>
                     {/* <ul className='popped'> */}
-                    <li>
-                        {/* NOT DONE */}
+                    {/* <li>
                         <NavLink
                             to="/bio"
                             className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}
@@ -31,7 +30,6 @@ function NavBar() {
                         </NavLink>
                     </li>
                     <li>
-                        {/* NOT DONE */}
                         <NavLink
                             to="/stack"
                             className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>
@@ -39,19 +37,26 @@ function NavBar() {
                         </NavLink>
                     </li>
                     <li>
-                        {/* NOT DONE */}
                         <NavLink
                             to="/projects"
                             className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>
                             projects
                         </NavLink>
-                    </li>
-                    <li>
-                        {/* NOT DONE */}
+                    </li> */}
+                    {/* <li>
                         <NavLink
                             to="/readme"
                             className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>
                             readme
+                        </NavLink>
+                    </li> */}
+                    <li>
+                        <NavLink
+                            to="https://www.nest-therapies.com"
+                            title="New tab to nest-therapies.com. WIP. (password: emily)"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Project: NEST
                         </NavLink>
                     </li>
                     <li>
