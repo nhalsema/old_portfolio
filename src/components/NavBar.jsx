@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import './Fonts.css'
-import PopUp from "./Popup.jsx";
+import './NavBar.css'
+import Modal from "./Modal.jsx";
 
 function NavBar() {
     const [showPopUp, setShowPopUp] = useState(false); // create a state variable
@@ -10,10 +10,25 @@ function NavBar() {
         setShowPopUp(true); // set the state to true when the NavLink is clicked
     };
 
-    // const closePopUp = () => {
-    //     setShowPopUp(false); // set the state to flase when the NavLink is closed
-    // };
+    const closePopUp = () => {
+        setShowPopUp(false); // set the state to flase when the NavLink is closed
+    };
 
+    // event listener for closing the popup
+    // useEffect(() => {
+    //     const handleOutsideClick = (event) => {
+    //         const popUp = document.querySelector('.popBox');
+    //         if (popUp && !popUp.contains(event.target)) {
+    //             setShowPopUp(false);
+    //         }
+    //     };
+
+    //     document.addEventListener('click', handleOutsideClick);
+
+    //     return () => {
+    //         document.removeEventListener('click', handleOutsideClick);
+    //     };
+    // }, []);
 
     return (
         <div>
@@ -28,15 +43,15 @@ function NavBar() {
                         >
                             bio
                         </NavLink>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <NavLink
                             to="/stack"
                             className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>
                             stack
                         </NavLink>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <NavLink
                             to="/projects"
                             className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""}>
@@ -60,7 +75,6 @@ function NavBar() {
                         </NavLink>
                     </li>
                     <li>
-                        {/* DONE */}
                         <NavLink
                             to="https://www.linkedin.com/in/nicolettehalsema/"
                             title="New tab to Linkedin.com/in/NicoletteHalsema"
@@ -70,7 +84,6 @@ function NavBar() {
                         </NavLink>
                     </li>
                     <li>
-                        {/* DONE */}
                         <NavLink
                             to="https://1drv.ms/b/s!AqOM54YtUds1nGExugz8REUMfraF?e=0dFg3o"
                             title="New tab to OneDrive copy of resume"
@@ -79,8 +92,7 @@ function NavBar() {
                             resume
                         </NavLink>
                     </li>
-                    <li>
-                        {/* DONE */}
+                    <li className="breakpoint-li">
                         <NavLink
                             to="mailto:Nicolettehalsema@gmail.com"
                             title="Open an email drafted to nicolettehalsema@gmail.com"
@@ -90,7 +102,13 @@ function NavBar() {
                     </li>
                 </ul>
             </nav>
-            {showPopUp && <PopUp />} {/* render the PopUp component when the state is true */}
+            {/* {showPopUp && <Modal />} render the PopUp component when the state is true */}
+            {/* {showPopUp && (
+                <div className="popBox">
+                    <button onClick={closePopUp}>Close</button>
+                    <p>This is the pop-up content.</p>
+                </div>
+            )} */}
         </div>
     )
 };

@@ -1,26 +1,34 @@
-/* sorted by order of appearence */
+/* ~~ navbar div ~~ */
+.navbar {
+    width: 90%;
+    height: 20%;
 
-/* BUT FIRST: import all the fonts */
-/* ~~ navbar ~~ */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background: invisible */
+    background: inherit;
+    /* background: black; */
+
+    flex-wrap: wrap;
+    /* keep visible above all other */
+    z-index: 10000
+}
+
+
+/* ~~ import font ~~ */
 @font-face {
     font-family: 'NeonFont';
     src: url('../assets/NeonFont.otf') format('opentype');
 }
 
-/* ~~ name ~~ */
-@font-face {
-    font-family: 'TitleFont';
-    src: url('../assets/BumerangFont.otf') format('opentype');
-}
-
-/* ~~ description & footer  ~~ */
-@font-face {
-    font-family: 'FooterFont';
-    src: url('../assets/ChampagneFont.ttf') format('opentype');
-}
-
-/* NOW WE FORMAT */
-/* ~~ navbar ~~ */
+/* ~~ font ~~ */
 ul {
     font-family: NeonFont;
     font-style: bold;
@@ -30,7 +38,6 @@ ul {
     /* make ul horizontal and remove bullet points */
     list-style: none;
     display: flex;
-    list-style: none;
 }
 
 li {
@@ -45,50 +52,6 @@ a {
     color: inherit;
 }
 
-/* ~~ name ~~ */
-h2 {
-    font-family: 'TitleFont', sans-serif;
-    font-size: 12vw;
-    text-align: center;
-    background-image: url('../assets/gold-texture.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-clip: text;
-    color: rgba(255, 255, 255, 0);
-
-    line-height: 1.05;
-    /* chagne fontsize to view-widths (vw) for mobile */
-}
-
-/* ~~ description ~~ */
-h3 {
-    font-family: 'FooterFont';
-    font-size: 1.8vw;
-    font-style: bold;
-    text-align: center;
-    background-image: url('../assets/gold-texture-sm.jpg');
-    background-repeat: repeat;
-    background-size: 100% 100%;
-    background-clip: text;
-    color: rgba(255, 255, 255, 0);
-
-    /* line-height: 1.2; */
-}
-
-/* ~~ footer ~~ */
-h4 {
-    font-family: 'FooterFont';
-    font-size: 1vw;
-    font-style: bold;
-    text-align: center;
-    background-image: url('../assets/gold-texture-sm.jpg');
-    background-repeat: repeat;
-    background-size: 100% 100%;
-    background-clip: text;
-    color: rgba(255, 255, 255, 0);
-}
-
-/* ~~ navbar ~~ */
 /* hover neon effect */
 /* references: https://codepen.io/AllThingsSmitty/pen/VzXrgY https://codepen.io/rhsuman/embed/PagVoP?height=300&theme-id=33801&slug-hash=PagVoP&default-tab=result&user=rhsuman&embed-version=2&pen-title=Animated%20Neon%20text%20hover&preview=true */
 .neon {
@@ -154,10 +117,20 @@ li:hover {
     }
 }
 
-.popFont {
-    font-family: 'FooterFont';
-    font-size: 2vw;
-    /* font-style: bold; */
-    text-align: left;
-    color: #22110d;
+
+/* optimize for small screen and mobile */
+@media (max-width: 800px) {
+    ul {
+        font-size: 8vw;
+        /* make ul horizontal and remove bullet points */
+        display: block;
+        text-align: right;
+        line-height: 1.8;
+    }
+
+    .navbar {
+        top: 80%;   
+        justify-content: right;
+        left: 65%;
+    }
 }

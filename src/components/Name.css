@@ -1,0 +1,53 @@
+/* ~~ name div ~~ */
+.nameBox {
+    width: 95%;
+    height: 50%;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background: invisible */
+    background: inherit;
+    /* background: green; */
+}
+
+/* ~~ import font ~~ */
+@font-face {
+    font-family: 'TitleFont';
+    src: url('../assets/BumerangFont.otf') format('opentype');
+}
+
+/* ~~ font ~~ */
+h2 {
+    font-family: 'TitleFont', sans-serif;
+    font-size: 12vw;
+    text-align: center;
+    background-image: url('../assets/gold-texture.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0);
+
+    line-height: 1.05;
+    /* chagne fontsize to view-widths (vw) for mobile */
+}
+
+/* optimize for small screen and mobile */
+@media (max-width: 800px) {
+    h2 {
+        font-size: 25vw;
+        /* make ul horizontal and remove bullet points */
+        display: block;
+        text-align: center;
+    }
+
+    .nameBox {
+        top:22%;
+    }
+}

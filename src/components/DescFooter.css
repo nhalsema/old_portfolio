@@ -1,0 +1,116 @@
+/* ~~ import font  ~~ */
+@font-face {
+    font-family: 'FooterFont';
+    src: url('../assets/ChampagneFont.ttf') format('opentype');
+}
+
+/* ~~ description ~~ */
+h3 {
+    font-family: 'FooterFont';
+    font-size: 1.8vw;
+    font-style: bold;
+    text-align: center;
+    background-image: url('../assets/gold-texture-sm.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0);
+
+    /* line-height: 1.2; */
+}
+
+/* ~~ footer ~~ */
+h4 {
+    font-family: 'FooterFont';
+    font-size: 1vw;
+    font-style: bold;
+    text-align: center;
+    background-image: url('../assets/gold-texture-sm.jpg');
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    background-clip: text;
+    color: rgba(255, 255, 255, 0);
+}
+
+
+
+/* ~~ desc div ~~ */
+.descBox {
+    width: 95%;
+    height: 20%;
+
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background: invisible */
+    background: inherit;
+    /* background: white; */
+
+    flex-wrap: wrap;
+}
+
+/* ~~ footer div ~~ */
+.footer {
+    width: 20%;
+    height: 6%;
+
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background: invisible */
+    background: inherit;
+    /* background: #22110d; */
+}
+
+
+/* optimize for small screen and mobile */
+@media (max-width: 800px) {
+    h3 {
+        font-size: 7vw;
+        /* make ul horizontal and remove bullet points */
+        display: block;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 4vw;
+    }
+
+    .descBox {
+        top: 45%;
+    }
+
+    .footer {
+        width: 40%;
+        height: 0%;
+
+        top: 103%;
+        left: 22%;
+
+        /* top: 94%;
+        left: -15%;
+
+        transform: rotate(270deg); */
+    }
+
+}
+
+
+
+
+/* use for styling active links  */
+/* #popped a.active {
+    color: red;
+  } */

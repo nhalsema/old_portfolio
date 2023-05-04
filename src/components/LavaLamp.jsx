@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 // reference: https://codepen.io/smpnjn/pen/yLPdEPQ 
 
-
 function LavaLamp() {
 
     const rand = function (min, max) {
