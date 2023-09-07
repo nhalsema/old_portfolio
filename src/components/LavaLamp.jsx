@@ -87,7 +87,6 @@ function LavaLamp() {
             });
         }
 
-
         function changeCanvas(timestamp) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             let adjX = 1;

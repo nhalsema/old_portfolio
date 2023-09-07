@@ -21,7 +21,6 @@
     z-index: 10000
 }
 
-
 /* ~~ import font ~~ */
 @font-face {
     font-family: 'NeonFont';
@@ -117,20 +116,28 @@ li:hover {
     }
 }
 
-
 /* optimize for small screen and mobile */
 @media (max-width: 800px) {
-    ul {
-        font-size: 8vw;
-        /* make ul horizontal and remove bullet points */
-        display: block;
-        text-align: right;
-        line-height: 1.8;
+    .navbar {
+        height: 40%;
+        top: 78%;   
+        left: 45%;
+        flex-wrap: nowrap;
     }
 
-    .navbar {
-        top: 80%;   
-        justify-content: right;
-        left: 65%;
+    ul {
+        font-size: 8vw;
+        letter-spacing: 2.5px;
+        /* make ul horizontal and remove bullet points */
+        display: block;
+        text-align: center;
+        line-height: 2.5;   
     }
+
+    li {
+        margin-right: 0px;    
+    }
+
+
+
 }

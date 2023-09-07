@@ -32,15 +32,13 @@ h4 {
     color: rgba(255, 255, 255, 0);
 }
 
-
-
 /* ~~ desc div ~~ */
 .descBox {
     width: 95%;
     height: 20%;
 
     position: absolute;
-    top: 81%;
+    top: 76%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -74,7 +72,6 @@ h4 {
     /* background: #22110d; */
 }
 
-
 /* optimize for small screen and mobile */
 @media (max-width: 800px) {
     h3 {
@@ -93,24 +90,8 @@ h4 {
     }
 
     .footer {
-        width: 40%;
+        width: 50%;
         height: 0%;
-
-        top: 103%;
-        left: 22%;
-
-        /* top: 94%;
-        left: -15%;
-
-        transform: rotate(270deg); */
+        bottom: 3%;
     }
-
 }
-
-
-
-
-/* use for styling active links  */
-/* #popped a.active {
-    color: red;
-  } */
