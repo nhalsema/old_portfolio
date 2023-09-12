@@ -34,6 +34,15 @@ function NavBar() {
                             resume
                         </NavLink>
                     </li>
+                    <li>
+                        <NavLink
+                            to="https://github.com/nhalsema"
+                            title="New tab to github.com/nhalsema"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            github
+                        </NavLink>
+                    </li>
                     <li className="breakpoint-li">
                         <NavLink
                             to="mailto:nbhalsema@gmail.com"
