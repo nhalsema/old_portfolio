@@ -22,7 +22,7 @@ function App() {
       {/* ~~ desc ~~ */}
       <div className="descBox">
         <h3>
-          January 2024: Open to New Work<br /><br />
+          january 2024: open to new opportunities<br /><br />
           software developer<br />
           web designer<br />
           IT generalist
