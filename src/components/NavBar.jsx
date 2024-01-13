@@ -19,7 +19,7 @@ function NavBar() {
                     <li>
                         <NavLink
                             to="https://www.linkedin.com/in/nhalsema/"
-                            title="New tab to linkedin.com/in/nhalsema"
+                            title="linkedin.com/in/nhalsema"
                             target="_blank"
                             rel="noopener noreferrer">
                             linkedin
@@ -27,8 +27,8 @@ function NavBar() {
                     </li>
                     <li>
                         <NavLink
-                            to="https://drive.google.com/file/d/1rR_T-8ty4A7A_39jwjdHWU_Sodq4ZnB6/view?usp=drive_link"
-                            title="New tab to Google Drive copy of resume"
+                            to="https://drive.google.com/file/d/1PhHwgd2HwZ336UPFQxW9FhdKduPxwP-y/view?usp=sharing"
+                            title="resume on Google Drive"
                             target="_blank"
                             rel="noopener noreferrer">
                             resume
@@ -37,7 +37,7 @@ function NavBar() {
                     <li>
                         <NavLink
                             to="https://github.com/nhalsema"
-                            title="New tab to github.com/nhalsema"
+                            title="github.com/nhalsema"
                             target="_blank"
                             rel="noopener noreferrer">
                             github

@@ -22,15 +22,15 @@ function App() {
       {/* ~~ desc ~~ */}
       <div className="descBox">
         <h3>
-          Currenly Open to New Work<br /><br />
-          IT Professional<br />
-          Software Developer<br />
-          Creator
+          January 2024: Open to New Work<br /><br />
+          software developer<br />
+          web designer<br />
+          IT generalist
         </h3>
       </div>
       {/* ~~ footer ~~ */}
       <div className='footer'>
-        <h4>last updated: September 2023</h4>
+        <h4>last updated: January 2024</h4>
       </div>
     </div>
   )
